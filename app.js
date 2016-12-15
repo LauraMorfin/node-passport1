@@ -17,6 +17,8 @@ var db = mongoose.connection;
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+
+
 // init a;;
 var app = express();
 
@@ -78,6 +80,8 @@ next();
 
 app.use('/', routes);
 app.use('/users', users);
+
+
 
 //set passport
 app.set('port',(process.env.PORT || 3000));
